@@ -16,7 +16,8 @@ export class KnowledgeComponent {
     "fa-brands fa-sass",
     "fa-brands fa-node",
     "fa-brands fa-angular",
+    "fa-brands fa-git",
     "fa-brands fa-github",
-    "icon-typescript"
+
   ])
 }

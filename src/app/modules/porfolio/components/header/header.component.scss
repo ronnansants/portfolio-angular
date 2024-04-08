@@ -1,4 +1,6 @@
 :host{
-  .container-md{
+  .bg-gradient-darkblue{
+    background: rgb(43,65,98);
+    background: linear-gradient(56deg, rgba(43,65,98,1) 68%, rgba(88,108,144,1) 83%, rgba(183,202,243,1) 100%);
   }
 }
