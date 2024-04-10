@@ -1,3 +1,14 @@
 <app-header/>
-<app-knowledge/>
-<app-experiences/>
+<main>
+  <app-knowledge/>
+  <app-experiences/>
+  @defer(on viewport) {
+    <app-projects/>
+  } @placeholder(minimum 1.5s) {
+    <section class="container-fluid text-center bg-warning-subtle py-5">
+      <p class="lead fs-2">Carregando projetos desenvolvidos...</p>
+    </section>
+  }@error {
+    <app-error></app-error>
+  }
+</main>
