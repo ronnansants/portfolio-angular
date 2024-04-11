@@ -2,7 +2,7 @@
   <h2>projetos desenvolvidos</h2>
   <ul class="row">
     @for(item of arrayProjects(); track item){
-    <li class="col text-decoration-none d-inline w-100">
+    <li class="col">
       <button class="btn btn-primary">
         <img [src]="item.src" [alt]="item.alt" [attr.width]="item.wid" [attr.height]="item.hei" loading="lazy">
       </button>
