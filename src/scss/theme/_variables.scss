@@ -2,21 +2,27 @@
 // COLORS PALLETE
 :root{
   --primary-100:#2ECC71;
-  --primary-200:#00ae56;
-  --primary-300:#006a18;
-  --accent-100:#3498DB;
-  --accent-200:#006f93;
-  --accent-300:#4cb1d7;
+  --primary-110:#60ad5e;
+  --primary-200:#598d57;
+  --primary-300:#2C5F2D;
+  --primary-310:#054400;
+  --accent-100:#4cb1d7;
+  --accent-200:#3498DB;
+  --accent-300:#006f93;
+  --accent-310:#005992;
   --text-100:#F8F8F8;
-  --text-200:#e0e0e0;
+  --text-200: snow;
+  --text-300:#e0e0e0;
   --bg-100:#1A1A1A;
   --bg-200:#292929;
   --bg-300:#404040;
 }
 
-/* cores para analisar
+/*
+ cores para analisar
+:out-of-range{
     --primary-100:#2C5F2D;
-    --primary-200:#598d57;
+    --primary-200:#00ae56;
     --primary-300:#b9f0b4;
     --accent-100:#4ABDAC;
     --accent-200:#005e51;
@@ -25,5 +31,7 @@
     --bg-100:#1A1E2E;
     --bg-200:#292d3e;
     --bg-300:#414557;
+
+}
 
 */
