@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { IProjects } from '../../interface/IProjects.interface';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [],
+  imports: [ MatDialogModule ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

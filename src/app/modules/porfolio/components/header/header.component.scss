@@ -51,6 +51,18 @@ aside{
   }
 
   section{
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+
+      &:hover{
+        background: var(--bg-300);
+        border-radius: 12px;
+      }
+    }
+
     figure{
       width: 335px;
       height: 77px;
@@ -64,21 +76,15 @@ aside{
       border-radius: 9px;
 
       figcaption{
-        a {
-          display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          flex-direction: column;
+      p{
+        margin: 3px 0;
+        color: var(--text-200);
+        text-transform: uppercase;
+      }
 
-          p{
-            margin: 3px 0;
-          }
-
-          strong{
-            color: var(--text-200)
-          }
-        }
-
+      strong{
+        color: var(--accent-200)
+      }
       }
 
     }
