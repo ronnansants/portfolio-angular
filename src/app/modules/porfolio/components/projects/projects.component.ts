@@ -1,6 +1,8 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { IProjects } from '../../interface/IProjects.interface';
 import { MatDialogModule } from '@angular/material/dialog';
+import { EDialogPanelClass } from '../../enum/EDialogPanelClass.enum';
+import { DialogProjectsComponent } from '../dialog/dialog-projects/dialog-projects.component';
 
 @Component({
   selector: 'app-projects',
@@ -10,6 +12,8 @@ import { MatDialogModule } from '@angular/material/dialog';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
+  #dialog = inject(MatDialogModule);
+
   arrayProjects = signal<IProjects[]>([
     {
       src: 'assets/imgs/projects/logo.png',
@@ -34,4 +38,11 @@ export class ProjectsComponent {
       }]
     }
   ])
+
+  public openDialog(data: IProjects){
+    this.#dialog.open(DialogProjectsComponent,{
+      data,
+      panelClass: EDialogPanelClass
+    })
+  }
 }
