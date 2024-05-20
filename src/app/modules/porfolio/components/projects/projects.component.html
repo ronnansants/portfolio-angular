@@ -3,7 +3,7 @@
   <ul class="row">
     @for(item of arrayProjects(); track item){
     <li class="col">
-      <button (click)="openDialog(item)" class="btn btn-primary">
+      <button (click)="openDialog(item)" class="btn btn-primary" alt="item.title">
         <img [src]="item.src" [alt]="item.alt" [attr.width]="item.wid" [attr.height]="item.hei" loading="lazy">
       </button>
     </li>
